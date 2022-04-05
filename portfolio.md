@@ -41,15 +41,15 @@ Both are old works. I'm not working on translating anymore.
 
 ### Contest
 
-- 第21回高校生ものづくりコンテスト北海道ブロック大会電子回路組立部門
+- 第21回高校生ものづくりコンテスト北海道ブロック大会電子回路組立部門 at 北海道旭川工業高等学校
   - [優勝(最優秀賞) (10人中)](http://www.sapporokotonikougyou.hokkaido-c.ed.jp/index.php?key=joz1it0yc-293#_293)
 ![](https://firebasestorage.googleapis.com/v0/b/kdatabase-1088a.appspot.com/o/Portfolio-Monocon-Hokkaido.JPG?alt=media&token=8246c905-9806-4bd3-b42c-b51522d23a84)
-- 第21回高校生ものづくりコンテスト全国大会電子回路組立部門
+- 第21回高校生ものづくりコンテスト全国大会電子回路組立部門 at 神奈川県立東部総合職業技術校
   - [第4位 (11人中)](http://www.sapporokotonikougyou.hokkaido-c.ed.jp/index.php?key=jorr98sbi-293#_293)
 ![](https://firebasestorage.googleapis.com/v0/b/kdatabase-1088a.appspot.com/o/Portfolio-Monocon-Zen%20(Medium).JPG?alt=media&token=10de518c-c3a2-4bb8-9379-a91e3891af72)
-- 第38回北海道高等学校工業クラブ大会計算技術競技大会の部
+- 第38回北海道高等学校工業クラブ大会計算技術競技大会の部 at 北海道帯広工業高等学校
   - 個人競技 優良賞
-- 第39回北海道高等学校工業クラブ大会計算技術競技大会の部
+- 第39回北海道高等学校工業クラブ大会計算技術競技大会の部 at 北海道札幌琴似工業高等学校(リモート開催)
   - 個人競技 特別賞
   - 個人競技 第2位
 
@@ -70,7 +70,7 @@ Both are old works. I'm not working on translating anymore.
 - 第二種電気工事士
 - 工事担任者デジタル三種(現 第二級デジタル通信)
 - 第二級陸上特殊無線技士
-- Other certification/licences.
+- Other certifications/licences.
 
 ## About programming
 
