@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Portfolio
-subtitle: Works and Results of public contest
+subtitle: My Works, affiliations, and Results of public contests
 ---
 
 ## About me
@@ -11,10 +11,10 @@ Birth : Mar/1/2004
 
 ## Affiliation
 
-- 2019 ~ 2022/3/31
-  - 北海道札幌琴似工業高等学校 情報技術科(Hokkaido Sapporo Kotoni Technical High school, Department of Information Technology)
-- 2022/4 ~
-  - 公立はこだて未来大学 システム情報科学部(Future University Hakodate, School of Systems Information Science)
+- Apr/2022
+  - 公立はこだて未来大学 システム情報科学部(School of Systems Information Science, Future University Hakodate) as a bachelor student
+- Apr/2019 - Mar/2022
+  - 北海道札幌琴似工業高等学校 情報技術科(Department of Information Technology, Hokkaido Sapporo Kotoni Technical High school) as a high school student
 
 ## Works
 
@@ -47,9 +47,9 @@ Both are old works. I'm not working on translating anymore.
 - 第21回高校生ものづくりコンテスト全国大会電子回路組立部門 at 神奈川県立東部総合職業技術校
   - [第4位 (11人中)](http://www.sapporokotonikougyou.hokkaido-c.ed.jp/index.php?key=jorr98sbi-293#_293)
 ![](https://firebasestorage.googleapis.com/v0/b/kdatabase-1088a.appspot.com/o/Portfolio-Monocon-Zen%20(Medium).JPG?alt=media&token=10de518c-c3a2-4bb8-9379-a91e3891af72)
-- 第38回北海道高等学校工業クラブ大会計算技術競技大会の部 at 北海道帯広工業高等学校
+- 第38回北海道高等学校工業クラブ大会 計算技術競技大会の部 at 北海道帯広工業高等学校
   - 個人競技 優良賞
-- 第39回北海道高等学校工業クラブ大会計算技術競技大会の部 at 北海道札幌琴似工業高等学校(リモート開催)
+- 第39回北海道高等学校工業クラブ大会 計算技術競技大会の部 at 北海道札幌琴似工業高等学校(リモート開催)
   - 個人競技 特別賞
   - 個人競技 第2位
 
