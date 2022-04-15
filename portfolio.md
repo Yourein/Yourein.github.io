@@ -60,9 +60,6 @@ Both are old works. I'm not working on translating anymore.
 - [CodeChef](https://www.codechef.com/users/yourein)
   - Highest : Blue(★3) (At Mar/31/2021)
 
-<br>
-- [Yourein Beginner Contest 001](https://mojacoder.app/users/Yourein/contests/YBC001) on MojaCoder
-  - Tested/Helped by [naskya](https://twitter.com/Qedfx) and [bayashiko](https://twitter.com/bayashiko_kpr). Big thanks to both two!
 
 ### Certification/Licence
 

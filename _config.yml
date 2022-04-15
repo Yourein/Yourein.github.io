@@ -17,9 +17,9 @@ navbar-links:
   About Me: "aboutme"
   Portfolio: "portfolio"
   Resources:
-    - Jekyll (SSG used for this site): "https://beautifuljekyll.com"
-    - Beautiful Jekyll(Theme used for this site): "https://beautifuljekyll.com"
-    - WaifuLabs (My Icon was made with this service): "https://waifulabs.com"
+    - Jekyll: "https://beautifuljekyll.com"
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - WaifuLabs: "https://waifulabs.com"
 
 # --- Logo --- #
 
