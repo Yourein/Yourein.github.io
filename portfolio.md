@@ -60,6 +60,10 @@ Both are old works. I'm not working on translating anymore.
 - [CodeChef](https://www.codechef.com/users/yourein)
   - Highest : Blue(★3) (At Mar/31/2021)
 
+### Presentations/Lightning talks
+
+- [急がない 〇〇〇〇 Problem at ゆるく勉強しよう [2年ぶり]](https://yurui-hakodate.connpass.com/event/243541/)
+    - [スライド資料](https://firebasestorage.googleapis.com/v0/b/kdatabase-1088a.appspot.com/o/%E3%82%86%E3%82%8B%E3%81%AF%E3%81%93.pdf?alt=media&token=81848de1-2bde-4729-99dc-5e6cdb5fc5a4)
 
 ### Certification/Licence
 
