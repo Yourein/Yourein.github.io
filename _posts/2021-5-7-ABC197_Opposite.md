@@ -43,8 +43,8 @@ $$\cos{(\alpha + \theta)}$$と$$\sin{(\alpha + \theta)}$$を加法定理を用�
 
 $$
 \begin{aligned}
-\cos{(\alpha + \theta)} &= \cos{\alpha}\cos{\theta} - \sin{\alpha}\cos{\theta} \\
-&= \dfrac{a}{\text{OP}}\cos{\theta} - \dfrac{b}{\text{OP}}\cos{\theta}
+\cos{(\alpha + \theta)} &= \cos{\alpha}\cos{\theta} - \sin{\alpha}\sin{\theta} \\
+&= \dfrac{a}{\text{OP}}\cos{\theta} - \dfrac{b}{\text{OP}}\sin{\theta}
 \end{aligned}
 
 \\
@@ -58,11 +58,11 @@ $$
 を得ます。
 
 ここで\
-$$Q \left( \text{OP}\left( \dfrac{a}{\text{OP}}\cos{\theta} - \dfrac{b}{\text{OP}}\cos{\theta}\right) , \text{OP}\left(  \dfrac{b}{\text{OP}}\cos{\theta} + \dfrac{a}{\text{OP}}\sin{\theta} \right) \right)$$\
+$$Q \left( \text{OP}\left( \dfrac{a}{\text{OP}}\cos{\theta} - \dfrac{b}{\text{OP}}\sin{\theta}\right) , \text{OP}\left(  \dfrac{b}{\text{OP}}\cos{\theta} + \dfrac{a}{\text{OP}}\sin{\theta} \right) \right)$$\
 です。\
 $$x, y$$成分ともに全ての項の分母分子が共通因数$$\text{OP}$$を持つので、$$\text{OP} = 1$$と読み替えてよいです。
 
-したがって$$Q(a\cos{\theta} - b\cos{\theta}, \hspace{0.2em} b\cos{\theta} + a\sin{\theta})$$を得ます。
+したがって$$Q(a\cos{\theta} - b\sin{\theta}, \hspace{0.2em} b\cos{\theta} + a\sin{\theta})$$を得ます。
 
 # もとの問題
 
