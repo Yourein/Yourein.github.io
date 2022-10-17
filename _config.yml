@@ -221,6 +221,8 @@ paginate: 5
 
 kramdown:
   input: GFM
+  math-engine: mathjax
+  smart_quotes: ["apos", "apos", "quot", "quot"]
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
