@@ -188,7 +188,17 @@ $n \ge 10^8$については、時間がかかるので勘弁してください�
 
 うまぴょい 
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1CVp4kdln1HWxTQbB0SGjF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1CVp4kdln1HWxTQbB0SGjF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+<!-- <div class="embed-spotify-song">
+    <iframe src="https://open.spotify.com/embed/track/1CVp4kdln1HWxTQbB0SGjF"  
+        frameborder="0" 
+        allowtransparency="true" 
+        allow="encrypted-media"
+        width="100%"
+        height = "350">
+    </iframe>
+</div> -->
 
 ところで、この方法、$n$次ユークリッド空間の超球などについては適用できそうですが、$n$次元空間内で歪な形をした関数の場合どうなるんでしょう?
 
