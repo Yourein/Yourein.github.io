@@ -139,7 +139,7 @@ V &= \int_{-r}^{r}{\pi (\sqrt{r^2 - x^2})^2} dx \\\\
 \end{aligned}
 $
 
-より、$V = 9\frac{4}{3}\pi \simeq 113.09733552923$です。
+より、$V = 27\frac{4}{3}\pi \simeq 113.09733552923$です。
 
 ```python
 import numpy as np
