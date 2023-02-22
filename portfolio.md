@@ -12,7 +12,7 @@ Birth : Mar/1/2004
 ## Affiliation
 
 - Apr/2022
-  - 公立はこだて未来大学 システム情報科学部(School of Systems Information Science, Future University Hakodate) as a bachelor student
+  - 公立はこだて未来大学 システム情報科学部(School of Systems Information Science, Future University Hakodate) as an undergraduate student
 - Apr/2019 - Mar/2022
   - 北海道札幌琴似工業高等学校 情報技術科(Department of Information Technology, Hokkaido Sapporo Kotoni Technical High school) as a high school student
 
@@ -25,7 +25,7 @@ Birth : Mar/1/2004
 - [Holodex](https://holodex.net) by Holodex team
   - English to Japanese
 
-Both are my past works. I'm not working on translating anymore.
+I'm not working on translating anymore.
 
 ### Software
 
