@@ -8,6 +8,8 @@
 # Name of website
 title: Yourein's Desktop.ini
 
+favicon: /assets/img/favicon.ico
+
 # Your name to show in the footer
 author: Yourein
 
