@@ -510,8 +510,51 @@ void mouseClicked() { rootView.onEvent(Event.onClicked); }
 
 ![](https://firebasestorage.googleapis.com/v0/b/kdatabase-1088a.appspot.com/o/statefulprocessing%2Fviewtree.png?alt=media)
 
+具体的なViewたち、この例では`Button`や`Counter`は最も最下層にあります。  
+`RootView`がその2つをまとめる形となり、PAppletから具体的なViewを隠蔽します。  
+そのため、Event Flow自体はPAppletから発出されているにも関わらず、`Button`のコールバック、ActionはPAppletを通過していません。  
 
+## 別の例 (View Treeだけ)
+
+これはかなり簡単な例なので、もうすこし込み入ったアプリケーションのView Treeを見てみることにします。
+
+[![Yourein/SCounter - GitHub](https://gh-card.dev/repos/Yourein/SCounter.svg)](https://github.com/Yourein/SCounter)
+
+レポジトリ自体はモノレポなので、`Yourein/SCounter/SCounter`を参照してください。  
+
+![](https://firebasestorage.googleapis.com/v0/b/kdatabase-1088a.appspot.com/o/statefulprocessing%2FSCounterViewTree.drawio.svg?alt=media)
+
+今回は、上のようなView Treeが構築されます。先程の例と違いViewが多いので、あるViewがどのViewに依存するのかを縁取り矢印で示しています。
+
+この実装では`Scaffold`というViewが配下のViewをまとめます。  
+Scaffoldは`BottomNavigation`と`AppBar`、`Content`をそれぞれ持ち、`AppBar`と`Content`、そして`BottomNavigation`の配下である`Tab`については $N$ 個そのインスタンスが存在します。  
+
+さて、TwitterのTLのようなものを想像してください。
+画面下の`BottomNavigation`部分には$N$個の`Tab`が存在します。  
+一方で画面上には`AppBar`が表示されており、現在注目している`Content`のタイトルが表示されています。  
+ここで、今は`Tab1`、`AppBar1`、`Content1`に注目しているとします。  
+このときに`Tab1`でない他のタブに対してクリックを行うと、`AppBar`と`Content`が貼り変わるようなイメージをしてください。
+
+なんとなくイメージできたでしょうか?  
+その動作を実現するのが上のView Treeです。
+
+グラフとしては込み入っていますが、Actionのような上層に影響を及ぼすViewがすくないので、まだ読みやすいレベルだと思います。
+
+# 思想
+
+ここまでガッツリと実装について語ってきたわけですが、少しは思想についても語っておこうと思います。  
+
+Stateful Processingでは、とにかく外部に自分の重要な部分を隠蔽することに注力します。  
+それは自分のStateはもちろんのこと、Logic部分、すなわち関数にも適応されます。  
+この思想からすると、あるViewが外部に露出するものは`void draw`と(あるならば)`void onEvent`と(これもあるならば)StateのSetterのみになります。
+
+別の部分でもチラっと言いましたが、Processingはとにかくグローバル領域にものが散乱しがちなフレームワークです。散乱するものは変数や関数やクラスなどなど…  
+特に関数や変数が厄介で、似た名前の2つの関数があるとき、その関数にはどこからでもアクセスできるという状態になります(これは当たり前ですが…)。  
+こういうのはIDEだったりが頑張って解決してくれたりする部分であると思いますが、Processing標準のIDEはそこまで強力なものではありませんし、VSCodeも(Processing用の拡張機能を入れた状態で)そこまで賢い補完をしてくれるわけではありません。  
+したがって、似た名前の関数や変数に関しては人間が気をつける他なくなるわけですが、そういう開発体験はそこまで良いものではないと思います。[^4]  
+このような開発体験を少しでもよくするということを目標にして、Stateful Processingではグローバルに公開される関数やポインタが極力少なくなるような設計になっています。
 
 [^1]: Processingではこの`void draw`関数が最上層になります。Arduinoの`void loop`と同じようなものだと思っていただければ大丈夫です。
 [^2]: Actionableがabstract classとなっていますが、これは`action`を`protected`とするためです。
 [^3]: Processing-3を使っている人は、lambdaが使えないので、適宜別の実装をしてください。lambdaみたいな抽象クラスを定義して、具象クラスをインスタンスとして渡す実装をすると良いです。
+[^4]: 自分は普段から.vimrcが10行くらいしか書いていない補完もsuggestもしてくれないvimでRustを書いていたりするのでそこまで気にならなかったりしますが…
