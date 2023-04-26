@@ -508,7 +508,7 @@ void mouseClicked() { rootView.onEvent(Event.onClicked); }
 
 上のアプリケーションがどのような構造になっているかを分解してみます。
 
-![](https://firebasestorage.googleapis.com/v0/b/kdatabase-1088a.appspot.com/o/statefulprocessing%2FScreenshot from 2023-04-26 22-27-10.png?alt=media)
+![](https://firebasestorage.googleapis.com/v0/b/kdatabase-1088a.appspot.com/o/statefulprocessing%2Fviewtree.png?alt=media)
 
 
 
