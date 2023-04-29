@@ -2,7 +2,7 @@
 layout: page
 title: Stateful Processingとその思想
 tags: [プログラミング]
-thumbnail-img: https://firebasestorage.googleapis.com/v0/b/kdatabase-1088a.appspot.com/o/statefulprocessing%2FSCounterViewTree.drawio.svg?alt=media
+thumbnail-img: https://firebasestorage.googleapis.com/v0/b/kdatabase-1088a.appspot.com/o/statefulprocessing%2Fviewtree.png?alt=media
 ---
 
 Processingは、初学者でもGUIプログラミングに触れることが可能で、簡単なソフトウェアのプロトタイピングについても強力なプログラミング言語 (フレームワーク?) です。
