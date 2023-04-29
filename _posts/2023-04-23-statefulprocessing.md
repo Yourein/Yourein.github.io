@@ -2,7 +2,7 @@
 layout: page
 title: Stateful Processingとその思想
 tags: [プログラミング]
-thumbnail-img: 
+thumbnail-img: https://firebasestorage.googleapis.com/v0/b/kdatabase-1088a.appspot.com/o/statefulprocessing%2FSCounterViewTree.drawio.svg?alt=media
 ---
 
 Processingは、初学者でもGUIプログラミングに触れることが可能で、簡単なソフトウェアのプロトタイピングについても強力なプログラミング言語 (フレームワーク?) です。
@@ -10,9 +10,7 @@ Processingは、初学者でもGUIプログラミングに触れることが可�
 一方で、多少込み入った動作を実装しようとしたときに困りごとが多く発生する面で、ソフトウェアの開発に向いている言語であるとは言えません。  
 この記事ではそのような問題を解決する思想の一つとして、Stateful Processingという思想を紹介します。  
 
-この内容は、4/30日に函館市 亀田交流プラザで行われたMariners' Conferenceでお話した内容をさらに深堀した内容となります。副読資料として、下にGoogle Slideをembedしています。適宜読んでみてください。
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSuBEYSpA-3Ip_rFrvbPSQkeOI7gm3yVBRr1v_bJYFtbCTfGQa__Oo-bU4hyTTYsm0nLdfrsCKNQNHC/embed?start=false&loop=false&delayms=3000" frameborder="0" width="750" height="428" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+この内容は、4/30日に函館市 亀田交流プラザで行われたMariners' Conferenceでお話する/した内容をさらに深堀した内容となります。発表が終わったあとに下に副読資料として発表のスライドを埋め込んでおこうと思います。
 
 # Processingの辛さ
 
@@ -57,9 +55,11 @@ void stage() {
 }
 ```
 
-ブロック崩しのゲームをイメージしてください。  
-自分と相手が対戦していて、相手は弾をStage上に打ち出してきます。自機は典型的なブロック崩しのラケットで、マウスでラケットを操作して、敵機が打ち出してきた弾を打ち返します。  
-自分と相手がそれぞれ10ブロックを持っており、弾を打ち返して相手のブロックをすべて崩すことが勝利条件です。対して、弾を打ち返さずに自分が持っているブロックがすべて相手の弾に破壊されたら敗北です。
+話は逸れますが、公立はこだて未来大学には1年次必修科目に情報表現入門と呼ばれる科目があります。  
+この科目では、1年生全員がProcessingを用いて、ゲームとアプリケーションをそれぞれ一つずつ作り上げるという(言い方は悪いですが)尖った授業があります。  
+上のソースコードは自分がそのゲーム課題で提出したコードから抜粋したもので、ゲームのイメージをつけるために以下に自分が提出した資料の一部を示します。
+
+![](https://firebasestorage.googleapis.com/v0/b/kdatabase-1088a.appspot.com/o/statefulprocessing%2Fblock1022.png?alt=media)
 
 このコードは典型的なViewとLogicが混在したコードと言えます。  
 まず、ステージが終了した(相手もしくは自分のブロックがすべて壊された)かの判定を2つのfor文を用いて`stage`関数内で行っています。
@@ -161,7 +161,8 @@ Logicを担当するコードをもう一層上で呼び出し、Viewの描画�
 
 より具体的には、View Partsをクラス化して、それぞれのStateをカプセル化してしまおうという発想です。  
 しかし、View Partsの中には他のView Partsで起こったEventにしたがって状態を変化させる必要が生じる場面があります。そのような場合は、外部にsetterを提供することで解決することとします。  
-ここでいう責務を受け持つとは、外部には「自分が変数hogeを持っています！」と周知し(実際クラス内部で宣言し)、その変数のライフタイムがView (のクラス) のライフタイムと一致するもしくは、Viewよりあとに誕生しViewより先に死ぬことをいいます。
+ここでいう責務を受け持つとは、外部には「自分が変数hogeを持っています！」と周知し(実際クラス内部で宣言し)、その変数のライフタイムがView (のクラス) のライフタイムと一致するもしくは、Viewよりあとに誕生しViewより先に死ぬことをいいます。  
+すなわち、ViewはそのStateをprivateなメンバとして持ち、StateがViewより先に(グローバル領域に)あったり、Viewのインスタンスが消滅したあとにグローバルにそのStateが残っているような状態を作ってはいけないということです。
 
 例えば、以下のような例を考えてみます。
 
@@ -188,9 +189,9 @@ void setup() {
 ```
 
 この例は、原則を守っていないと判断します。  
-というのも、HogeのstateであるhugaInstanceのライフタイムがHogeのインスタンスであるhogeより長いからです。
+というのも、`Hoge`のstateである`hugaInstance`のライフタイムが`Hoge`のインスタンスである`hoge`より長いからです。
 
-これを解決する例として、Hogeのインスタンスを作成するときに一緒にHugaのインスタンスを生成するという方法があります。
+これを解決する例として、`Hoge`のインスタンスを作成するときに一緒に`Huga`のインスタンスを生成するという方法があります。
 
 ```java
 Hoge hoge;
@@ -200,7 +201,7 @@ void setup() {
 }
 ```
 
-構文解析的にはHugaのインスタンスほうが生成されるタイミングが早いですが、Hugaのポインタは外部に露出しておらず、十分にHugaというStateに対する責任を持てていると思います。
+構文解析的には`Huga`のインスタンスのほうが生成されるタイミングが早いですが、`Huga`のポインタは外部に露出しておらず、十分に`Huga`というStateに対する責任を持てていると思います。
 
 # View と Logicを分離する
 
@@ -391,9 +392,9 @@ public void action(Event kind) {
 
 本当ならば、ここでaction関数に渡さずに、onEvent関数に処理を任せてもいいですが、actionの処理が込み入った処理である場合や、他のEventもcatchしなければいけないViewでは可読性が低下する可能性があります。  
 ゆえに、あえてcallbackや内部処理を行う部分をactionという別関数に切り分けることで一定の可読性を担保する設計としています。  
-もし葉が`InteractiveItem`で、`action`がない場合は、何かしら別のprivateな関数を作ってそこでハンドリングすることをおすすめします。(必須ではないです)
+ここではEventによる内部処理も`action`関数で書けば良いというように書いていますが、もし気になるのであればそこだけ別のprivateな関数に切り出すのも良いと思います。同様に、もし葉が`InteractiveItem`で、`action`がない場合は、何かしら別のprivateな関数を作ってそこでハンドリングすることをおすすめします。
 
-## How the View should be?
+## Viewはなにであるべきか
 
 Stateful ProcessingではViewの実装について詳細なことを定めていません。  
 既存のProcessingのように`width`, `height`を用いたり、座標をベタ書きしても良いと思いますし、Viewが木構造であることを利用して宣言的UIのようなシステムを構築してもよいと思います。
@@ -481,7 +482,8 @@ class RootView extends InteractiveItem {
 ここまで上のViewなら、コンストラクタ内で子Viewのインスタンスを生成してしまって良いと思います。  
 下に行けば行くほどに上層のViewの情報を必要とするViewが多くなる傾向があるため、適切な部分を見つけて、コンストラクタの中で宣言をベタ書きするのをやめるのが良いと思います。
 
-これで必要なViewは揃ったので、あとはこれをPApplet側から呼び出すだけです。
+これで必要なViewは揃ったので、あとはこれをPApplet側から呼び出すだけです。  
+GitHubのレポジトリでは、下のコードに加えてたくさんEventFlowを流す処理がありましたが、EventFlowは必要なだけ流せば十分なので、必要なものだけ書くということをおすすめします(元レポジトリの方は動作テストも兼ねていたので、あれだけたくさん書いていたという裏があります)。
 
 ```java
 RootView rootView;
