@@ -5,7 +5,7 @@ tags: [Poem]
 ---
 
 [Misskeyのおひとりさまインスタンス](https://post.yourein.net)を建てました。  
-その思想はこの記事。技術は[こっちの記事]()。
+その思想はこの記事。技術は[こっちの記事](https://yourein.github.io/2023-07-08-misskeyserver_2/)。
 
 # そもそもなぜFediverseにいるのか
 

@@ -5,7 +5,7 @@ tags: [Poem]
 ---
 
 [Misskeyのおひとりさまインスタンス](https://post.yourein.net)を建てました。  
-その思想は[こっちの記事]()。技術はこの記事。
+その思想は[こっちの記事](https://yourein.github.io/2023-07-08-misskeyserver_1/)。技術はこの記事。
 
 # サーバーを建てると言っても
 
