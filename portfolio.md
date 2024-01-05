@@ -50,6 +50,12 @@ I'm not working on translating anymore.
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">P2HACKS2022 テーマは「未来」✨<br>pre部門4つ目は、チームfunGによる<br>「Flyme」👣<a href="https://twitter.com/hashtag/p2hacks?src=hash&amp;ref_src=twsrc%5Etfw">#p2hacks</a> <a href="https://t.co/hbPXjN7LFN">pic.twitter.com/hbPXjN7LFN</a></p>&mdash; P2HACKS 2022 (@p2hacks) <a href="https://twitter.com/p2hacks/status/1604346075996790784?ref_src=twsrc%5Etfw">December 18, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+- [この世界は熱すぎる！](https://yourein.github.io/2023-12-17-5fac3b/)
+  - 大学の同期と参加したハッカソンの成果物です。Rust wasmを用いた画像処理部分を担当しました。
+  - [Githubレポジトリはこちら](https://github.com/p2hacks2023/pre-06)
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/p2hacks?src=hash&amp;ref_src=twsrc%5Etfw">#p2hacks</a><br>うちのチームfuNGで開発したものです<br><br>この世には熱いものは多すぎる！！！<br>ひんやりを取り戻せ！！！ <a href="https://t.co/lE7L5COcVP">https://t.co/lE7L5COcVP</a> <a href="https://t.co/n5BQ9hCaRc">pic.twitter.com/n5BQ9hCaRc</a></p>&mdash; ぺるき (@PerukiFUN) <a href="https://twitter.com/PerukiFUN/status/1736247561416294517?ref_src=twsrc%5Etfw">December 17, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 - [?](https://qiita.com/Yourein/items/fbac46b066c2ff44db0c)
 - [?](https://qiita.com/Yourein/items/2c6344beaa07b112edf9)
 
@@ -67,11 +73,19 @@ I'm not working on translating anymore.
   - 個人競技 特別賞
   - 個人競技 第2位
 
+### Internship
+
+- ウォンテッドリー株式会社
+  - Androidエンジニア
+
 ### Presentations/Lightning talks
 
 - [急がない 〇〇〇〇 Problem at ゆるく勉強しよう [2年ぶり]](https://yurui-hakodate.connpass.com/event/243541/)
     - [スライド資料](https://firebasestorage.googleapis.com/v0/b/kdatabase-1088a.appspot.com/o/%E3%82%86%E3%82%8B%E3%81%AF%E3%81%93.pdf?alt=media&token=81848de1-2bde-4729-99dc-5e6cdb5fc5a4)
 - [このソフトウェアはこのあとサ終します at NITほんわかんふぁ vol.4 in 釧路](https://yourein.github.io/2023-02-16-honwaconf4/)
+- [CHI勉強会2023 - 30. Programming](https://www.youtube.com/live/uSbZQEwEJ7c?si=gGYCh5ilPmN6b4Zj&t=5633)
+- [Stateful Processingとその思想](https://docs.google.com/presentation/d/15WuHyythMvtJRYXZ1UEO7NU84ZEtaXUnu6D3NcVFhzg/edit?usp=sharing)
+- [分散SNSよもやま話](https://docs.google.com/presentation/d/1F-keiPH_9NbMp82Qf2U3PQazOAVGO09Ma32N_0Hy0Ro/edit?usp=sharing)
 
 ### Certification/Licence
 
@@ -80,16 +94,3 @@ I'm not working on translating anymore.
 - 工事担任者デジタル三種(現 第二級デジタル通信)
 - 第二級陸上特殊無線技士
 - Other certifications/licences.
-
-## About programming
-
-- Language
-  - C/C++
-  - Python
-  - Java / Kotlin
-  - Rust
-
-- Framework
-  - Android SDK
-  - Jetpack Compose
-  - Flask
