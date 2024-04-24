@@ -90,7 +90,7 @@ B1の頃に様々な勉強会に顔を出しすぎて感覚が麻痺してしま
 
 # サーバー建てます
 
-[こっち]()
+[こっち](https://yourein.github.io/2023-07-08-misskeyserver_2/)
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5WsjuvYrFRi9cqKBscT3oq?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
